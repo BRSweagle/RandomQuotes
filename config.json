@@ -2,7 +2,7 @@
 	"Client_Jenkins": {
 		"core": {
 			"PRD.host.env1": {
-				"data.encrypted": "true",
+				"data.encrypted": "false",
 				"DeletionPolicy": "50",
 				"Engine": "new",
 				"Forward": "false",
