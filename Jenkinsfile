@@ -7,27 +7,18 @@ pipeline {
         sleep 2
       }
     }
-    
-        stage('UploadConfig'){
 
-            steps {
+    stage('UploadConfig') {
+      steps {
+        SWEAGLEUpload(actionName: 'Upload JSON Files', fileLocation: '*.json', format: 'json', nodePath: 'Eldorado,releases,jenkinsConf', subDirectories: true, description: 'Upload json files')
+      }
+    }
 
-                SWEAGLEUpload(
-                actionName: 'Upload JSON Files',
-                fileLocation: "*.json",
-                format: 'json',
-                markFailed: false,
-                nodePath: 'Eldorado,releases,jenkinsConf',
-                onlyParent: false,
-                showResults: false,
-                withSnapshot: false,
-                subDirectories: true,
-                description: 'Upload json files',
-                tag: '',
-                autoRecognize: false,
-                allowDelete: false)
+    stage('ValidateConfig') {
+      steps {
+        SWEAGLEValidate(actionName: 'NoHTTP', mdsName: 'jenkinsConf', errMax: 5)
+      }
+    }
 
-            }
-        }
   }
 }
