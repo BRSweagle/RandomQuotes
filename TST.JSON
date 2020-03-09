@@ -1,7 +1,8 @@
 {
   "TST": {
-    "appEnabled": "true",
-    "appEoL": "false",
+    "appEnabled": "false",
+    "appEoL": "true",
+    "appEoD": "false",
     "appName": "APP",
     "data.encrypted": "@@true@@",
     "data.level": "customer",
