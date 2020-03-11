@@ -1,109 +1,109 @@
 {
-	"Client_Jenkins": {
-		"core": {
-			"PRD.host.env1": {
-				"data.encrypted": "false",
-				"DeletionPolicy": "50",
-				"Engine": "new",
-				"Forward": "false",
-				"host.instance": "TST1",
-				"host.Port": "443",
-				"host.URL": "https://TST.hosted.env2:443",
-				"internal": "true",
-				"ip.internal": "200.200.304.11",
-				"sensitive": "true",
-				"token": "f3iuno123578yfbsuyalse",
-				"host.port": "9999",
-				"apitoken": "UYNytaf65"
-			},
-			"ToBe": {
-				"core": "war7.2",
-				"env.elasticsearch.port": "1453",
-				"env.elasticsearch.url": "",
-				"version": "7.2"
-			},
-			"TST.host.env1": {
-				"host.instance": "TestEnv2",
-				"host.Port": "445",
-				"host.URL": "https://internal.env1:443",
-				"ip.internal": "200.223.546.787"
-			},
-			"Repo URL": "https://gitlab.com/sweagle/Fill.git",
-			"Scriptpath": "jenkins_fil_3",
-			"Version": "1.2"
-		},
-		"SampleFullOptions": {
-			"DESCRIPTION_LIST": {
-				"DESCRIPTION": {
-					"ADDRESS": {
-						"KEY": "...",
-						"PROTOCOL": "IPC"
-					},
-					"ADDRESS_LIST": {
-						"ADDRESS": {
-							"null": {
-								"HOST": "host2",
-								"PORT": "1521",
-								"PROTOCOL": "tcp",
-								"RECV_BUF_SIZE": "11784",
-								"SEND_BUF_SIZE": "11784"
-							}
-						},
-						"FAILOVER": "on",
-						"LOAD_BALANCE": "off",
-						"SOURCE_ROUTE": "off"
-					}
-				},
-				"SOURCE_ROUTE": "on"
-			}
-		},
-		"versions": {
-			"ConnectionDetails": {
-				"app_pool": "sqlwebadmin_pool",
-				"port": "809833",
-				"site_name": "sqlwebadmin_site"
-			}
-		},
-		"WebClientDetails": {
-			"appDBName": "database8",
-			"appEmail": "ben.riley@google.com",
-			"appEnabled": "true",
-			"appEoL": "false",
-			"appFirewallIP": "200.10.2.42222",
-			"appName": "WebPortal3",
-			"appPassword": "...",
-			"appPort": "8080",
-			"appToken": "...",
-			"appURL": "https://localmail.sweagle.com",
-			"appUsername": "Admin",
-			"data.encrypted": "No",
-			"data.level": "customer",
-			"data.region": "southamerica-west",
-			"DB.Name": "database1",
-			"env..core.server.port": "8090",
-			"env..core.url": "https://localhost",
-			"env.active": "TRUE",
-			"env.core.enabled": "true",
-			"env.core.install.path": "/opt/SWEAGLE",
-			"env.core.logging.file": "/opt/SWEAGLE/logs/sweagl_core.log",
-			"env.core.server.port": "8090",
-			"env.core.tracking.file": "/opt/SWEAGLE/logs/sweagl_core.log",
-			"env.core.url": "https://localhost",
-			"env.dataloader.install.path": "/opt/SWEAGLE",
-			"env.db.host": "MASDB",
-			"env.db.port": "33052",
-			"env.db.schema": "mdm23",
-			"env.db.username": "prd_user",
-			"env.db.userpassword": "...",
-			"info.loglevel": "4",
-			"localMail": "",
-			"newport": "9376424"
-		},
-		"active": "true",
-		"artifact.buildName": "Infinity_CoreTest",
-		"component.name": "core4",
-		"component.owner.team": "Scrum Boost",
-		"EOL.announced": "False",
-		"EOL.date": ""
-	}
+  "Client_Jenkins": {
+    "core": {
+      "PRD.host.env1": {
+        "data.encrypted": "false",
+        "DeletionPolicy": "40",
+        "Engine": "oracle",
+        "Forward": "false",
+        "host.instance": "TST1",
+        "host.Port": "443",
+        "host.URL": "https://TST.hosted.env2:443",
+        "internal": "true",
+        "ip.internal": "200.200.304.11",
+        "sensitive": "true",
+        "token": "f3iuno123578yfbsuyalse",
+        "host.port": "9999",
+        "apitoken": "UYNytaf65"
+      },
+      "ToBe": {
+        "core": "war7.2",
+        "env.elasticsearch.port": "1453",
+        "env.elasticsearch.url": "",
+        "version": "7.2"
+      },
+      "TST.host.env1": {
+        "host.instance": "TestEnv2",
+        "host.Port": "445",
+        "host.URL": "https://internal.env1:443",
+        "ip.internal": "200.223.546.787"
+      },
+      "Repo URL": "https://gitlab.com/sweagle/Fill.git",
+      "Scriptpath": "jenkins_fil_3",
+      "Version": "1.2"
+    },
+    "SampleFullOptions": {
+      "DESCRIPTION_LIST": {
+        "DESCRIPTION": {
+          "ADDRESS": {
+            "KEY": "...",
+            "PROTOCOL": "IPC"
+          },
+          "ADDRESS_LIST": {
+            "ADDRESS": {
+              "null": {
+                "HOST": "host2",
+                "PORT": "1521",
+                "PROTOCOL": "tcp",
+                "RECV_BUF_SIZE": "11784",
+                "SEND_BUF_SIZE": "11784"
+              }
+            },
+            "FAILOVER": "on",
+            "LOAD_BALANCE": "off",
+            "SOURCE_ROUTE": "off"
+          }
+        },
+        "SOURCE_ROUTE": "on"
+      }
+    },
+    "versions": {
+      "ConnectionDetails": {
+        "app_pool": "sqlwebadmin_pool",
+        "port": "809833",
+        "site_name": "sqlwebadmin_site"
+      }
+    },
+    "WebClientDetails": {
+      "appDBName": "database8",
+      "appEmail": "ben.riley@google.com",
+      "appEnabled": "true",
+      "appEoL": "false",
+      "appFirewallIP": "200.10.2.42222",
+      "appName": "WebPortal3",
+      "appPassword": "...",
+      "appPort": "8080",
+      "appToken": "...",
+      "appURL": "https://localmail.sweagle.com",
+      "appUsername": "Admin",
+      "data.encrypted": "No",
+      "data.level": "customer",
+      "data.region": "southamerica-west",
+      "DB.Name": "database1",
+      "env..core.server.port": "8090",
+      "env..core.url": "https://localhost",
+      "env.active": "TRUE",
+      "env.core.enabled": "true",
+      "env.core.install.path": "/opt/SWEAGLE",
+      "env.core.logging.file": "/opt/SWEAGLE/logs/sweagl_core.log",
+      "env.core.server.port": "8090",
+      "env.core.tracking.file": "/opt/SWEAGLE/logs/sweagl_core.log",
+      "env.core.url": "https://localhost",
+      "env.dataloader.install.path": "/opt/SWEAGLE",
+      "env.db.host": "MASDB",
+      "env.db.port": "33052",
+      "env.db.schema": "mdm23",
+      "env.db.username": "prd_user",
+      "env.db.userpassword": "...",
+      "info.loglevel": "4",
+      "localMail": "",
+      "newport": "9376424"
+    },
+    "active": "true",
+    "artifact.buildName": "Infinity_CoreTest",
+    "component.name": "core4",
+    "component.owner.team": "Scrum Boost",
+    "EOL.announced": "False",
+    "EOL.date": ""
+  }
 }
