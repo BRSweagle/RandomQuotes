@@ -3,7 +3,7 @@
     "core": {
       "PRD.host.env1": {
         "data.encrypted": "false",
-        "DeletionPolicy": "40",
+        "DeletionPolicy": "55",
         "Engine": "oracle",
         "Forward": "false",
         "host.instance": "TST1",
