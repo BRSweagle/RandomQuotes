@@ -10,7 +10,7 @@ pipeline {
 
     stage('UploadConfig') {
       steps {
-        SWEAGLEUpload(actionName: 'Upload JSON Files', fileLocation: 'config.json', format: 'json', nodePath: 'Eldorado,releases,jenkinsConf', subDirectories: true, description: 'Upload json files', showResults: true, tag: '1.1', withSnapshot: true)
+        SWEAGLEUpload(actionName: 'Upload JSON Files', fileLocation: 'config.json', format: 'json', nodePath: 'Eldorado,releases,release2.0', subDirectories: true, description: 'Upload json files', showResults: true, tag: 'Version:1.7.${BUILD_ID}', withSnapshot: true)
       }
     }
 
