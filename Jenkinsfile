@@ -13,12 +13,5 @@ pipeline {
         SWEAGLEUpload(actionName: 'Upload JSON Files', fileLocation: 'config.json', format: 'json', nodePath: 'Eldorado,releases,jenkinsConf,new', withSnapshot: true, subDirectories: true, description: 'Upload json files')
       }
     }
-
-    stage('ValidateConfig') {
-      steps {
-        SWEAGLEValidate(actionName: 'NoHTTP', mdsName: 'jenkinsConf', errMax: 5)
-      }
-    }
-
   }
 }
