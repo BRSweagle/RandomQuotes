@@ -1,9 +1,16 @@
 pipeline {
   agent any
   stages {
-    stage('ConfigUpload') {
+    stage('build') {
       steps {
-        SWEAGLEUpload(actionName: 'UploadConfig', fileLocation: 'https://github.com/BRSweagle/RandomQuotes.git', format: 'json', nodePath: 'Eldorado', allowDelete: true, filenameNodes: true, subDirectories: true, withSnapshot: true, tag: '${BUILD_ID}')
+        git(url: 'https://github.com/BRSweagle/RandomQuotes', poll: true)
+        sleep 2
+      }
+    }
+
+    stage('UploadConfig') {
+      steps {
+        SWEAGLEUpload(actionName: 'Upload JSON Files', fileLocation: 'config.json', format: 'json', nodePath: 'Eldorado,releases,release2.0', description: 'Upload json files', showResults: true, tag: 'Version:1.7.${BUILD_ID}', filenameNodes: true)
       }
     }
 
