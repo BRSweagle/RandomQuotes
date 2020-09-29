@@ -35,7 +35,7 @@ pipeline {
 
         stage('ValidateConfig') {
           steps {
-            SWEAGLEValidate(actionName: 'Validate', mdsName: 'Icarus.Dev-1', noPending: true)
+            SWEAGLEValidate(actionName: 'Validate', mdsName: 'Icarus.Dev-1')
           }
         }
 
